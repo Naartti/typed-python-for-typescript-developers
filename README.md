@@ -3,9 +3,9 @@ I recently got a new job and went from the fantastic world of TypeScript into th
 
 # TL;DR
 
-Create a venv virtual environment with Python 3.9 and install black and pylint. I'd recommend using VS Code with the Python plugin, Pylance language server and the `settings.json` as defined below - a nice dev environment is crucial!
+Create a venv virtual environment with Python 3.9 and install black and pylint. I'd recommend using [VS Code](https://code.visualstudio.com/) with the [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) plugin, [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) language server and the `settings.json` as defined below - a nice dev environment is crucial!
 
-Check out this git repo for exact setup for both TypeScript and typed Python used in this article.
+Check out [this git repo](https://github.com/Naartti/typed-python-for-typescript-developers) for exact setup for both TypeScript and typed Python used in this article.
 
 ||TypeScript|Typed Python|
 |--|--|--|
@@ -38,7 +38,7 @@ Unlike TypeScript, typing comes built into Python. The common types (`str`, `flo
 from typing import Tuple, Union
 ```
 
-So, why should you install external packages? Because alike TypeScript, type hints does not come in the package. And without type hints, typing is pretty much useless. For typed Python, I’d recommend using [VS Code](https://code.visualstudio.com/) with the [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) plugin, [pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) as language server, [pylint](https://github.com/PyCQA/pylint) as linter and [black](https://black.readthedocs.io/en/stable/index.html) as code formatter.
+So, why should you install external packages? Because alike TypeScript, type hints does not come in the package. And without type hints, typing is pretty much useless. For typed Python, I’d recommend using [VS Code](https://code.visualstudio.com/) with the [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) plugin, [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) as language server, [pylint](https://github.com/PyCQA/pylint) as linter and [black](https://black.readthedocs.io/en/stable/index.html) as code formatter.
 
 Note that **you must** use a virtual environment when working in a Python project if you hold your sanity dear. This could be a virtual environment (like [venv](https://docs.python.org/3/tutorial/venv.html)), a docker image or a virtual environment inside a docker image. For smaller projects, I've used venv but for larger projects I use docker with the VS Code plugin [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
 
