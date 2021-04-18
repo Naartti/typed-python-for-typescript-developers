@@ -7,7 +7,20 @@ Create a venv virtual environment with Python 3.9 and install black and pylint. 
 
 Check out this git repo for exact setup for both TypeScript and typed Python used in this article.
 
-[Cheat Sheet](https://www.notion.so/a7acfa0591d6480594f93617287e40b1)
+||TypeScript|Typed Python|
+|--|--|--|
+|String|string|str|
+|Number|number|float, int|
+|Boolean|boolean|bool|
+|List of strings|string[]|list[str]|
+|Dictionary of key (string) and value (number)|Record<string, number>|dict[str, float]|
+|Typed dictionary|type|TypedDict|
+|Optional string|?: string|Optional[str]|
+|Literal (either `a` or `b`)|'a' \| 'b'|Literal["a", "b"]|
+|Typing functions|const foo = (bar: string): string => {}|def foo(bar: str) -> str:|
+|Callable|(bar: string) => string|Callable[[str], str]|
+
+
 
 # Setup
 
